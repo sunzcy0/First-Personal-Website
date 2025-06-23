@@ -4,41 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gaby's First Web Site</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <section>
+
+  <header>
+    <nav>
+      <a href="#about-myself">About Me</a>
+      <a href="#contact">Contact Me</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="title">
     <h1>Gaby's Corner</h1>
     <p>Welcome to my first ever created website</p>
   </section>
+    <section id="about-me" class="about-me">
+      <h2 class="about-me_title">About Me</h2>
+      <p>Hi there! I'm Gaby 🧸, a curious and passionate Computer Science student who loves to bring ideas to life through code.</p>
+      <p>
+      Lately, I've been diving into the world of web development, exploring tools like JavaScript, HTML, and CSS. I'm currently working on personal projects where I get to mix logic, creativity, and a bit of fun.
+      </p>
+      <p>
+      I'm really into digital organization and enjoy learning new things on my own, especially when it comes to tech that makes everyday life a little easier (and prettier).
+      </p>
+      <p>
+      When I'm not at my computer, you'll probably find me reading, knitting, writing, listening to music, or practicing Japanese.
+      </p>
+      <p>
+      This little corner of the internet is my cozy space to share what I'm building, discovering, and dreaming up. Thanks so much for stopping by! 🌸
+      </p>
+    </section>
+    
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>If you want to get in touch, feel free to reach out through the form below or connect with me on social media!</p>
+        <form action="">
+          <label for="name">
+            <span>Name:</span>
+            <input type="text" id="name" name="name" placeholder="Write your name.." autocomplete="name" required/>
+          </label>
+          <label for="email">
+            <span>Email:</span>
+            <input type="email" id="name" name="email" placeholder="Write your email adress.." autocomplete="email" required/>
+          </label>
+          <label for="description">
+            <span>Description:</span>
+            <textarea id="message" name="message"rows="6" placeholder="Leave your message here..." required></textarea>
+          </label>
+        </form>
 
-  <section>
-    <h2>About Myself</h2>
-    <p>Hi there! I'm Gaby 🧸, a curious and passionate Computer Science student who loves to bring ideas to life through code.</p>
-
-    <p>
-    Lately, I've been diving into the world of web development, exploring tools like JavaScript, HTML, and CSS. I'm currently working on personal projects where I get to mix logic, creativity, and a bit of fun.
-    </p>
-
-    <p>
-    I'm really into digital organization and enjoy learning new things on my own, especially when it comes to tech that makes everyday life a little easier (and prettier).
-    </p>
-
-    <p>
-    When I'm not at my computer, you'll probably find me reading, knitting, writing, listening to music, or practicing Japanese.
-    </p>
-
-    <p>
-    This little corner of the internet is my cozy space to share what I'm building, discovering, and dreaming up. Thanks so much for stopping by! 🌸
-    </p>
-  </section>
-  
-  <section>
-    <h2>Contact</h2>
-    <h3>My Social Media</h3>
-    <p>Instagram</p>
-    <p>LinkedIn</p>
-    <p>Facebook</p>
-    <p>Twitter</p>
-  </section>
+      <article>
+      <h3>My Social Media</h3>
+      <p>Instagram</p>
+      <p>LinkedIn</p>
+      <p>Facebook</p>
+      <p>Twitter</p>
+      </article>
+    </section>
+  </main>
 </body>
 </html>
