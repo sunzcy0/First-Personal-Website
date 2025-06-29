@@ -91,7 +91,16 @@ body {
 
 .contact span {
   font-size: 1.2em;
+}
 
+.contact button {
+  background-color: #e5d2ff;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border-color: #e5d2ff;
+  font-size: 1em;
+  cursor: pointer;
 }
 
 .contact article {
