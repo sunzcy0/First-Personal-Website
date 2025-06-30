@@ -3,25 +3,28 @@ nav {
   justify-content: right;
   background-color: #e5d2ff;
   border-radius: 10px;
-  padding: 10px;
+  padding: 0px;
 }
 
 nav button {
-  background-color: lightblue;
+  background-color: white;
   border-color: transparent;
   border-radius: 20px;
   font-size: 1.5em;
   cursor: pointer;
   margin: 5px;
+  padding: 0px 10px;
 }
 
 nav a {
   list-style: none;
   margin: 10px;
-  padding: 0px;
+  padding: 10px;
   display: flex;
   color: #333;
   text-decoration: none;
+  background-color: white;
+  border-radius: 20px;
   font-size: 1em;
 }
 
@@ -61,11 +64,9 @@ body {
   text-align: center;
   padding: 20px;
   color: #000000;
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px auto;
   max-width: 1200px;
+  
 }
 
 .about-me h2 {
@@ -98,20 +99,66 @@ body {
   margin: 10px 0;
 } 
 
-.contact span {
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.contact label {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
   font-size: 1.2em;
 }
 
-.contact button {
-  background-color: #e5d2ff;
-  color: #333;
-  padding: 10px 20px;
-  border-radius: 20px;
-  border-color: #e5d2ff;
-  font-size: 1em;
-  cursor: pointer;
+.contact span {
+  font-size: 1.2em;
+  margin: 10px;
 }
 
+#name {
+  background-color: aliceblue;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 100%;
+  width: 200px;
+  max-width: 600px;
+}
+
+#email {
+  background-color: aliceblue;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 100%;
+  width: 200px;
+  max-width: 400px;
+}
+
+#message {
+  background-color: aliceblue;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 100%;
+  min-width: 400px;
+  max-width: 800px;
+  max-height: 300px;
+}
+
+.contact button.submit {
+  background-color: #e5d2ff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: 10px;
+}
 .contact article {
   display: flex;
   flex-direction: column;
@@ -122,8 +169,15 @@ body {
   color: #333;
   margin: 20px auto;
 }
-
-.contact h3 {
-  font-size: 2em;
-  margin: 0;
+.contact article p {
+  font-size: 1.2em;
+  margin: 10px 0;
 }
+.contact .social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
