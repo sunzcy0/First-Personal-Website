@@ -36,6 +36,11 @@ body {
   color: #333;
 }
 
+.title img {
+  width: 140px;
+  height: 150px;
+}
+
 .title h1 {
   font-size: 4em;
   margin: 0;
