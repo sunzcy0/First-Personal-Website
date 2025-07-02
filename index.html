@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta charset="U+2019">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gaby's First Web Site</title>
   <link rel="stylesheet" href="style.css"/>
@@ -10,20 +11,22 @@
 
   <header>
     <nav>
-      <a href="#about-myself">About Me</a>
-      <a href="#contact">Contact Me</a>
+      <a href="#about-me">About Me</a>
+      <a href=""#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
     <section class="title">
-    <img src="./images/Gaby's Icon.PNG" alt="Gaby's Icon" class="icon"/>
-    <h1>Gaby's Corner</h1>
-    <p>Welcome to my first ever created website</p>
-  </section>
+    <h1>Hello! I'm Gaby</h1>
+    <h2>Aspiring Full Stack Developer & Computer Science Student</h2>
+    <p>Welcome to my corner of the internet! I'm passionate about turning ideas into real, functional software using different programming languages, and beyond. As a curious and dedicated Computer Science student, I’m constantly learning and building. This space is where I share my journey, projects, and everything I’m creating along the way.</p>
+    </section>
+
+
     <section id="about-me" class="about-me">
       <h2 class="about-me_title">About Me</h2>
-      <p>Hi there! I'm Gaby 🧸, a curious and passionate Computer Science student who loves to bring ideas to life through code.</p>
       <p>
       Lately, I've been diving into the world of web development, exploring tools like JavaScript, HTML, and CSS. I'm currently working on personal projects where I get to mix logic, creativity, and a bit of fun.
       </p>
@@ -37,33 +40,48 @@
       This little corner of the internet is my cozy space to share what I'm building, discovering, and dreaming up. Thanks so much for stopping by! 🌸
       </p>
     </section>
-    
+
+    <section class="projects">
+      <h2>My Projects</h2>
+      <p>Here are some of the projects I've been working on lately. Each one is a step in my journey as a developer, and I’m excited to share them with you!</p>
+        <article class="project">
+        <h3>Project 1: Personal Portfolio</h3>
+        <p>This is my personal portfolio website where I showcase my skills, projects, and experiences. It’s built using HTML, CSS, and JavaScript.</p>
+        <a href="#">View Project</a>
+      </article>
+    </section>
+
+
     <section id="contact" class="contact">
         <h2>Contact Me</h2>
         <p>If you want to get in touch, feel free to reach out through the form below or connect with me on social media!</p>
+
+      <article class="contact-form">
         <form action="">
           <label for="name">
             <span>Name:</span>
-            <input type="text" id="name" name="name" placeholder="Write your name.." autocomplete="name" required/>
+            <input type="text" id="name" name="name" placeholder="Full Name" autocomplete="name" required/>
           </label>
           <label for="email">
             <span>Email:</span>
-            <input type="email" id="email" name="email" placeholder="Write your email adress.." autocomplete="email" required/>
+            <input type="email" id="email" name="email" placeholder="Email Address" autocomplete="email" required/>
           </label>
           <label for="description">
             <span>Description:</span>
-            <textarea id="message" name="message"rows="6" placeholder="Leave your message here..." required></textarea>
+            <textarea id="message" name="message"rows="6" placeholder="Message" required></textarea>
           </label>
         </form>
         <button class="submit" type="submit">Send</button>
+      </article>
 
-      <article>
+      <article class ="social-media">
+        <h3>Connect with Me</h3>
+        <p>I'm always excited to connect with fellow developers, students, and anyone who shares a passion for technology and creativity.</p>
       <p>Feel free to connect with me on my social media accounts!</p>
         <div class="social-media">
           <a href="" >LinkedIn</a>
           <a href="" >GitHub</a>
       </article>
-
     </section>
   </main>
 </body>
