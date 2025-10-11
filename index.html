@@ -12,50 +12,68 @@
   <header>
     <nav>
       <a href="#about-me">About Me</a>
-      <a href=""#projects">Projects</a>
+      <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
-    <section class="title">
+    <section class="introduction">
+    <div class="profile-picture">
+      <img src="./images/Portfolio Web Photo.png" alt="Profile Picture" />
+    </div>
+    <div class="introduction-text">
     <h1>Hello! I'm Gaby</h1>
     <h2>Aspiring Full Stack Developer & Computer Science Student</h2>
     <p>Welcome to my corner of the internet! I'm passionate about turning ideas into real, functional software using different programming languages, and beyond. As a curious and dedicated Computer Science student, I’m constantly learning and building. This space is where I share my journey, projects, and everything I’m creating along the way.</p>
+    </div>
     </section>
 
 
     <section id="about-me" class="about-me">
-      <h2 class="about-me_title">About Me</h2>
-      <p>
-      Lately, I've been diving into the world of web development, exploring tools like JavaScript, HTML, and CSS. I'm currently working on personal projects where I get to mix logic, creativity, and a bit of fun.
-      </p>
-      <p>
-      I'm really into digital organization and enjoy learning new things on my own, especially when it comes to tech that makes everyday life a little easier (and prettier).
-      </p>
-      <p>
-      When I'm not at my computer, you'll probably find me reading, knitting, writing, listening to music, or practicing Japanese.
-      </p>
-      <p>
-      This little corner of the internet is my cozy space to share what I'm building, discovering, and dreaming up. Thanks so much for stopping by! 🌸
-      </p>
+      <div class="about-me-text>" id="about-me-text">
+        <h2 class="about-me_title">About Me</h2>
+        <p>
+        Lately, I've been diving into the world of web development, exploring tools like JavaScript, HTML, and CSS. I'm currently working on personal projects where I get to mix logic, creativity, and a bit of fun.
+        </p>
+        <p>
+        I'm really into digital organization and enjoy learning new things on my own, especially when it comes to tech that makes everyday life a little easier (and prettier).
+        </p>
+        <p>
+        When I'm not at my computer, you'll probably find me reading, knitting, writing, listening to music, or practicing Japanese.
+        </p>
+        <p>
+        This little corner of the internet is my cozy space to share what I'm building, discovering, and dreaming up. Thanks so much for stopping by! 🌸
+        </p>
+      </div>
+      <div class="about-me-image" id="about-me-image">
+        <img src="./images/Hobbies.png" alt="Gaby's Hobbies" />
+      </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
       <h2>My Projects</h2>
       <p>Here are some of the projects I've been working on lately. Each one is a step in my journey as a developer, and I’m excited to share them with you!</p>
-        <article class="project">
+      <div class="projects-grid">
+      <article class="project-card">
         <h3>Project 1: Personal Portfolio</h3>
         <p>This is my personal portfolio website where I showcase my skills, projects, and experiences. It’s built using HTML, CSS, and JavaScript.</p>
         <a href="#">View Project</a>
       </article>
+      <article class="project-card">
+        <h3>Project 2: Emoti</h3>
+        <p>This is my personal portfolio website where I showcase my skills, projects, and experiences. It’s built using HTML, CSS, and JavaScript.</p>
+        <a href="#">View Project</a>
+      </article>
+      </div>
     </section>
 
 
     <section id="contact" class="contact">
+        <div class="contact-text">
         <h2>Contact Me</h2>
         <p>If you want to get in touch, feel free to reach out through the form below or connect with me on social media!</p>
-
+      </div>
       <article class="contact-form">
         <form action="">
           <label for="name">
@@ -70,19 +88,21 @@
             <span>Description:</span>
             <textarea id="message" name="message"rows="6" placeholder="Message" required></textarea>
           </label>
+          <button class="submit" type="submit">Send</button>
         </form>
-        <button class="submit" type="submit">Send</button>
-      </article>
 
+      </article>
+      </section>
+  </main>
+  <footer>
       <article class ="social-media">
         <h3>Connect with Me</h3>
         <p>I'm always excited to connect with fellow developers, students, and anyone who shares a passion for technology and creativity.</p>
       <p>Feel free to connect with me on my social media accounts!</p>
         <div class="social-media">
-          <a href="" >LinkedIn</a>
-          <a href="" >GitHub</a>
+          <a href=" >LinkedIn</a>
+          <a href="https://github.com/sunzcy0" >GitHub</a>
       </article>
-    </section>
-  </main>
+  </footer>
 </body>
 </html>
